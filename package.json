@@ -1,0 +1,44 @@
+{
+  "name": "electron-create-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "concurrently": "^5.1.0",
+    "cross-env": "^7.0.2",
+    "electron": "^8.2.1",
+    "wait-on": "^4.0.1"
+  },
+  "main": "public/electron.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"cross-env NODE_ENV=development PORT=3001 BROWSER=none npm start\" \"wait-on http://localhost:3001 && electron .\"",
+    "preelectron-pack": "npm run build",
+    "electron-pack": "electron-builder build -mw"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -14,10 +14,10 @@ const createWindow = () => {
   mainWindow.setMenuBarVisibility(false);
   mainWindow.setFullScreen(false);
   // uncomment only in development
-  mainWindow.loadURL(`http://localhost:3001`);
+  // mainWindow.loadURL(`http://localhost:3001`);
 
   // comment this in development
-  // mainWindow.loadURL(`file://${path.join(__dirname, "../build/index.html")}`);
+  mainWindow.loadURL(`file://${path.join(__dirname, "../build/index.html")}`);
   mainWindow.on("closed", () => (mainWindow = null));
 };
 

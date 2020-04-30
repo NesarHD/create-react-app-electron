@@ -20,6 +20,7 @@
     "wait-on": "^4.0.1"
   },
   "main": "public/electron.js",
+  "homepage": "./",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -4,7 +4,7 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "5.0.1"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -17,7 +17,7 @@
     "cross-env": "^7.0.2",
     "electron": "^8.2.1",
     "electron-builder": "^22.6.0",
-    "wait-on": "^4.0.1"
+    "wait-on": "^7.0.1"
   },
   "main": "public/electron.js",
   "homepage": "./",
